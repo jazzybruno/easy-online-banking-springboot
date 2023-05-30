@@ -1,3 +1,4 @@
+
 package com.jazzybruno.example.v1.models;
 
 
@@ -28,6 +29,8 @@ public class User {
     private String username;
     @NotNull
     private String national_id;
+    @Column
+    private boolean isVerified;
 
     @NotNull
     @ManyToOne
@@ -42,7 +45,6 @@ public class User {
     private String gender;
 
     @Column
-    @NotNull
     private String profilePicture;
     @NotNull
     private String password;
